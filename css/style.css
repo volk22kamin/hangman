@@ -1,0 +1,90 @@
+html{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    height: 100vh;
+}
+.you-won-container{
+    margin: 0;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.801);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    animation: modalopen 0.8s;
+}
+.show{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont{
+    background-color: whitesmoke;
+    height: 150px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:7px ;
+    border: 2px solid grey;
+}
+.cont{
+    display: flex;
+    flex-direction: column;
+    min-width: fit-content;
+    min-height: fit-content;
+}
+.cont h2{
+    font-size: xx-large;
+    padding: 3px;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+button{
+    padding: 10px;
+    width: 150px;
+    background-color: grey;
+    border: none;
+    border-radius: 7px;
+    font-size: 21px;
+    cursor: pointer;
+}
+button:active{
+    transform: scale(0.97);
+}
+h1{
+    text-align: center;
+}
+.hangman-container{
+    margin-top: 50px;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+img{
+    height:100vh;
+}
+.letter-container{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 50px;
+    height: auto;
+}
+
+@keyframes modalopen {
+    from{
+        opacity: 0;
+    } 
+    to{
+        opacity: 1;
+    }
+}
